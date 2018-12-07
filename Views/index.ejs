@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My EJS</title>
+</head>
+<body>
+  You Got it
+
+  <ul class="users">
+  <% for(var i=0; i<users.length; i++) {%>
+    <li class="users" >
+      <span><%= users[i].name %></span>
+      <span><%= users[i].age %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/fetch_i" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="age" name="age">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

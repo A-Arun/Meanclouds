@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EJS Demo</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="L:\Programs\HTML\bootstrap-3.3.7-dist\css\bootstrap.min.css">     
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/Stylesheets/style2.css">  
+  <script src="L:\Programs\HTML\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Food Feast</a>
+    </div>
+      <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/view">View Options </a></li>
+      
+    </ul>
+     
+  </div>
+        </nav>
+
+	</header>
+	<div class="clear"> </div>
+    
+    <section>
+        
+<form action="/save" method="post">
+    <table style="width:80%"  id="leftBox1">
+    <tr> 
+        
+        <th><span class="glyphicon glyphicon-th-list"></span>  Hotel Name</th> 
+        <th> <span class="glyphicon glyphicon-user"></span> Category</th> 
+        <th><span class="glyphicon glyphicon-calendar"></span> Cost of Two</th> 
+    </tr>
+  <% for(var i=0; i<food.length; i++) {%>
+        
+   <tr class="food">
+                     
+       
+      <td style="width:65%" > <%= food[i].hotel %>  </td>
+       
+      <td style="width:20%"> <%= food[i].ftype %> </td>
+      <td style="width:15%"> <%= food[i].cost %> </td>
+      <input type="hidden" value= "<%= food[i]._id %>" name="id" >
+       <td> <a href="<%= food[i]._id %>"> - </a></td>
+    </tr>
+          
+  <% } %>
+        
+<tr>    
+    
+    <td>  <button type="submit" name="submit" value="save">Save</button></td>  
+    
+    </tr>
+      </table>
+  </form>
+         </section>       
+  <div class="clear"> </div>
+  
+<article id="rightBox7">
+    <h2> Add New List</h2>
+  <form action="/insert" method="POST">
+       
+<table style="width:75%">
+  <tr>
+      
+    <th> <input type="text"  name="imageid"  placeholder="Id"> </th>
+    <th> <input type="textarea"  name="hotel" colspan="5" placeholder="Hotel Name"></th>
+    <th> <input type="text"  name="ftype"  placeholder="Food Type"> </th>
+    <th> <input type="cost"  name="cost" placeholder="Cost"></th>
+    <th> <button type="submit">Add</button></th>
+  </tr>
+  
+</table>
+     
+  </form>
+    
+</article>
+  
+
+</body>
+
+</html>

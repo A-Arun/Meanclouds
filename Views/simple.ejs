@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My EJS</title>
+    <script type="text/javascript" src="public/ejs_production.js"></script>
+</head>
+<body>
+    <h3> Hello . You are in simple.ejs </h3>
+<%= users %>
+    
+<% users=users %>
+        
+<%= users[1].users %>
+  <ul class="users">
+      <%= users.length %>
+  <% for(var i=0; i<users.length; i++) {%>
+    <li class="users" >
+      <span><%= users[i].name %></span>
+      <span><%= users[i].age %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  
+  <form action="/fetch_i" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="age" name="age">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

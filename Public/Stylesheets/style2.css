@@ -1,0 +1,139 @@
+body {
+	background-color: ghostwhite;
+}
+
+.nav_menu {list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu li {
+
+  min-width: 8em;
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.nav_menu li a:link,
+.nav_menu li a:visited {
+    background-color: aqua;
+        display: block;
+    padding: 0.2em;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0 0.2em 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+}
+
+
+.clear {
+
+	clear:both;
+}
+
+.Welcome{
+	background-color: rgb(150,255,150);
+	   width:850px;
+   height: 200px;
+	float:left;
+	vertical-align: center;
+}
+
+
+.Welcome img {
+   width:250px;
+   height: 200px;
+	float:right;
+}
+
+#leftBox{
+background-color: rgb(170,255,150);
+width:47%;
+height: 200px;
+float: left;
+padding: 10px;
+margin:5px;
+padding-right: 20px;
+    padding-top: 15px;
+color:blue;
+text-align: left;
+}
+
+#leftBox img{
+width:180px;
+   height: 150px;
+	float:right;
+ }
+
+
+#rightBox img{
+width:180px;
+   height: 150px;
+	float:right;
+ }
+
+#rightBox{
+	background-color: rgb(170,255,150);
+width:40%;
+height: 200px;
+float:right;
+padding: 10px;
+margin:5px;
+padding-right: 20px;
+padding-top: 15px;
+color:blue;
+text-align: left;
+}
+.navbar{
+
+	background-color: rgb(255,204,0);
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.item img{
+width:700px;
+height: 500px;
+    float:center;
+	
+ }
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+section1 {
+    display: -webkit-flex;
+    display: flex;
+}
+
+h2 {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+#img2:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
