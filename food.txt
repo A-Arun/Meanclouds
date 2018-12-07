@@ -1,0 +1,13 @@
+db.food.insertMany(
+  [
+{ "_id" : ObjectId("5c095f335e6ab3256ca67bd4"), "status" : null, "imageid" : "1", "hotel" : "Mc Donalds", "ftype" : "Burger", "cost" : "300" }
+{ "_id" : ObjectId("5c095a6a7dfdc75cd428eb6a"), "status" : null, "imageid" : "2", "hotel" : "Chit Chat", "ftype" : "Snacks", "cost" : "150" }
+{ "_id" : ObjectId("5c095a947dfdc75cd428eb6b"), "status" : null, "imageid" : "3", "hotel" : "Blue Berries", "ftype" : "Cakes and Bakes", "cost" : "150" }
+{ "_id" : ObjectId("5c095f235e6ab3256ca67bd3"), "status" : null, "imageid" : "4", "hotel" : "Subway", "ftype" : "Burger", "cost" : "300" }
+{ "_id" : ObjectId("5c095f685e6ab3256ca67bd5"), "status" : null, "imageid" : "5", "hotel" : "A2B", "ftype" : "South Indian Foods", "cost" : "350" }
+{ "_id" : ObjectId("5c095fcc5e6ab3256ca67bd6"), "status" : null, "imageid" : "6", "hotel" : "Bombay Chats", "ftype" : "Snacks", "cost" : "200" }
+{ "_id" : ObjectId("5c095ffb5e6ab3256ca67bd7"), "status" : null, "imageid" : "7", "hotel" : "Mr Beans", "ftype" : "Burger", "cost" : "400" }
+{ "_id" : ObjectId("5c095dd85e6ab3256ca67bd2"), "status" : null, "imageid" : "8", "hotel" : "Murugan Idlis", "ftype" : "South Indian Tiffins", "cost" : "300" }
+{ "_id" : ObjectId("5c095d5a5e6ab3256ca67bd0"), "status" : null, "imageid" : "9", "hotel" : "Saravana Bhavan", "ftype" : "South Indian Meals", "cost" : "350" }
+ ]
+)
